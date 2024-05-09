@@ -2,575 +2,914 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother's Pride School</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <title>Mother's Pride</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav id="navbar-scroll-boo" class="navbar  fixed-top navbar-expand-lg navbar-dark nav-color text-uppercase">
-            <div class="container">
-                <a class="navbar-brand logo" href="#"><span>Mother's</span> Pride</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar-position" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item list-style">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item dropdown list-style">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                about us
-                            </a>
-                            <ul class="dropdown-menu nav-color" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item dropdown-style" href="#whoWeAre">who we are?</a></li>
-                                <li><a class="dropdown-item dropdown-style" href="#whatWeDo">what we do?</a></li>
-                                <li><a class="dropdown-item dropdown-style" href="#howItWork">how it works?</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item list-style">
-                            <a class="nav-link" href="#courses">courses</a>
-                        </li>
-                        <li class="nav-item list-style">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-                    </ul>
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Mother's Pride</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Us</a>
+                    <a href="" class="nav-item nav-link">Classes</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="#" class="dropdown-item">School Facilities</a>
+                            <a href="#" class="dropdown-item">Popular Teachers</a>
+                            <a href="#" class="dropdown-item">Become A Teachers</a>
+                            <a href="#" class="dropdown-item">Make Appointment</a>
+                            <a href="#" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
                 </div>
+                <a href="#contact-us" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i
+                        class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
+        <!-- Navbar End -->
 
-        <!-- vidéo -->
-        <div id="home" class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="./images/course-video.mp4" type="video/mp4">
-        </video>
-        <!-- Endvidéo -->
 
-        <div class="container description text-uppercase">
-            <p>
-                GRADUATE SCHOOL OF MANAGEMENT
-            </p>
-            <h1>
-                <span>YOUR</span> CLASSROOM
-            </h1>
-            <button>discover more</button>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/kid1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten
+                                        School For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Mother's Pride is renowned for its
+                                        nurturing environment and innovative teaching methods, making it an excellent
+                                        choice for parents seeking a holistic approach to early childhood education.
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn
+                                        More</a>
+                                    <a href="#"
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/kid2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future
+                                        For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Mother's Pride is renowned for its
+                                        nurturing environment and innovative teaching methods, making it an excellent
+                                        choice for parents seeking a holistic approach to early childhood education.</p>
+                                    <a href="#"
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn
+                                        More</a>
+                                    <a href="#"
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+        <!-- Carousel End -->
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-scroll-boo" data-bs-offset="0" class="scrollspy-example"
-        tabindex="0">
 
-        <section class="features">
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="features-post">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h4>
-                                        <i class="fas fa-pencil-alt"></i> all courses
-                                    </h4>
-
-                                </div>
-                                <div class="content collapsed">
-                                    <p class="d-none d-lg-block d-md-block">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus,
-                                        laoreet libero eu, vehicula libero.
-                                    </p>
-                                    <p class="d-block d-lg-none d-md-none">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet.
-                                    </p>
-                                    <a href="#">more info.</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="features-post">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h4>
-                                        <i class="fas fa-graduation-cap"></i> virtual class
-                                    </h4>
-                                </div>
-                                <div class="content collapsed">
-                                    <p class="d-none d-lg-block d-md-block">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus,
-                                        laoreet libero eu, vehicula libero.
-                                    </p>
-                                    <p class="d-block d-lg-none d-md-none">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet.
-                                    </p>
-                                    <a href="#">more info.</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="features-post">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h4>
-                                        <i class="fa fa-book"></i> real meeting
-                                    </h4>
-                                </div>
-                                <div class="content collapsed">
-                                    <p class="d-none d-lg-block d-md-block">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus,
-                                        laoreet libero eu, vehicula libero.
-                                    </p>
-                                    <p class="d-block d-lg-none d-md-none">
-                                        Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
-                                        posuere imperdiet.
-                                    </p>
-                                    <a href="#">more info.</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">School Facilities</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="whoWeAre" class="whyUs">
-            <div class="container">
-                <div class="ligne"></div>
-                <div class="header">
-                    Why choose Mother's Pride School?
-                </div>
-                <div class="categorie">
-                    <ul>
-                        <li class="list-category best">
-                            <span class="text-uppercase">
-                                best <br class="d-block d-lg-none d-md-none"> education
-                            </span>
-                            <span>
-                                <i class="fas fa-square-full icon"></i>
-                            </span>
-                        </li>
-                        <li class="list-category top">
-                            <span class="text-uppercase">
-                                Top <br class="d-block d-lg-none d-md-none"> management
-                            </span>
-                            <span>
-                                <i class="fas fa-square-full icon"></i>
-                            </span>
-                        </li>
-                        <li class="list-category quality">
-                            <span class="text-uppercase">
-                                quality <br class="d-block d-lg-none d-md-none"> meeting
-                            </span>
-                            <span>
-                                <i class="fas fa-square-full icon"></i>
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-12 why quality hide">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="img">
-                                        <img src="./images/choose-us-image-02.png" width="90%" alt="">
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="content">
-                                        <h4>Quality Meeting</h4>
-                                        <p>
-                                            Mother's Pride is renowned for its nurturing environment and innovative teaching methods, making it an excellent choice for parents seeking a holistic approach to early childhood education. 
-                                            <a href="#" class="link">link</a> now.
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
                             </div>
-                        </div>
-                        <div class="col-12 why best">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="img">
-                                        <img src="./images/choose-us-image-01.png" width="90%" alt="">
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="content">
-                                        <h4>Best education</h4>
-                                        <p>
-                                            Mother's Pride is renowned for its nurturing environment and innovative teaching methods, making it an excellent choice for parents seeking a holistic approach to early childhood education. 
-                                            <a href="#" class="link">link</a> now.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 why top hide">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="img">
-                                        <img src="./images/choose-us-image-03.png" width="90%" alt="">
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="content">
-                                        <h4>Top management</h4>
-                                        <p>
-                                            Mother's Pride is renowned for its nurturing environment and innovative teaching methods, making it an excellent choice for parents seeking a holistic approach to early childhood education. 
-                                            <a href="#" class="link">link</a> now.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="whatWeDo" class="timer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                        <div class="content">
-                            <p class="big-text">
-                                Immerse your child in <a href="#" class="linko"> our enriching campus environment </a> Limited time offer!
-                            </p>
-                            <div class="count">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="days time">
-                                            <span class="number">92</span>
-                                            <span class="category text-uppercase">days</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="hours time">
-                                            <span class="number">92</span>
-                                            <span class="category text-uppercase">hours</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="minutes time">
-                                            <span class="number">92</span>
-                                            <span class="category text-uppercase">minutes</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="seconds time">
-                                            <span class="number">92</span>
-                                            <span class="category text-uppercase">seconds</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                        <div class="register">
-                            <div class="register-text">
-                                <p>
-                                    Register your free account and get immediate access to online courses
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">School Bus</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit
                                 </p>
                             </div>
-                            <div class="register-form">
-                                <input type="text" name="name" placeholder="Your Name" id="mane" required>
-                                <input type="email" name="email" placeholder="Your Email" id="email" required>
-                                <input type="tel" name="tel" placeholder="Your Phone Number" id="number" required>
-                                <button type="submit" class="btn text-uppercase">
-                                    GET IT NOW
-                                </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa fa-futbol fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Playground</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa fa-home fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Healthy Canteen</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Positive Learning</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- Facilities End -->
 
-        <section id="courses" class="lesson">
 
+        <!-- About Start -->
+        <div class="container-xxl py-5">
             <div class="container">
-                <div style="margin-bottom: 3rem;">
-                    <div class="ligne"></div>
-                    <div class="header">
-                        Choose Your Course
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </p>
+                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam
+                            rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus
+                            dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor
+                            est vero nonumy magna.</p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Akash Rana</h6>
+                                        <small>CEO & Founder</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="free"> free <i class="fas fa-angle-double-right"></i> </a>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="free"> Free <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="free"> Free <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="pay"> Pay <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/courses-01.jpg" width="100%" alt="">
-                        <div class="info-course">
-                            <h4>SOCIAL MEDIA</h4>
-                            <P>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum. </P>
-                            <div class="info-fo">
-                                <img src="./images/author-01.png" alt="">
-                                <a href="#" class="free"> Free <i class="fas fa-angle-double-right"></i> </a>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- About End -->
 
-        <section id="howItWork" class="presentation">
+
+        <!-- Call To Action Start -->
+        <div class="container-xxl py-5">
             <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="pre-content">
-                            <p class="smal-text text-uppercase">
-                                our presentation is for you
-                            </p>
-                            <h4>
-                                Watch the video to learn more <span> about Mother's Pride School</span>
-                            </h4>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing <a href="#" class="link">elit</a> .
-                                Reprehenderit amet facilis ipsam quam deleniti fugit nulla quasi quibusdam aliquid sed
-                                voluptatem aut unde odio cumque natus minus ducimus,
-                                maiores recusandae?
-                            </p>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima. Lorem ipsum
-                                dolor, sit amet consectetur adipisicing elit. Obcaecati.
-                            </p>
-                            <button class="btn url text-uppercase">
-                                external url
-                            </button>
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/3.jpg"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Become A Teacher</h1>
+                                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                                    amet diam et eos.
+                                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore
+                                    erat amet
+                                </p>
+                                <a class="btn btn-primary py-3 px-5" href="">Get Started Now<i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="pre-content">
-                            <div class="video-des">
-                                <div class="bgr">
-                                    <p class="h4 text-uppercase">
-                                        Lorem ipsum dolor
-                                    </p>
-                                    <p class="run">
-                                        <i class="fas fa-play"></i>
-                                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+
+        <!-- Classes Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">School Classes</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Art & Drawing</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Color Management</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Athletic & Dance</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-4.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Language & Speaking</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-5.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Religion & History</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">General Knowledge</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Akash Rana</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3-5 Years</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>9-10 AM</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacity:</h6>
+                                            <small>30 Kids</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Classes End -->
 
-        </section>
 
-        <section id="contact" class="contact">
+        <!-- Appointment Start -->
+        <div class="container-xxl py-5">
             <div class="container">
-                <div class="ligne"></div>
-                <div class="header">
-                    Why choose Mother's Pride School?
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Make Appointment</h1>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="gname"
+                                                    placeholder="Gurdian Name">
+                                                <label for="gname">Gurdian Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="gmail"
+                                                    placeholder="Gurdian Email">
+                                                <label for="gmail">Gurdian Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="cname"
+                                                    placeholder="Child Name">
+                                                <label for="cname">Child Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="cage"
+                                                    placeholder="Child Age">
+                                                <label for="cage">Child Age</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0"
+                                                    placeholder="Leave a message here" id="message"
+                                                    style="height: 100px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/4.jpg"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-content">
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Popular Teachers</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+                            <div class="team-text">
+                                <h3>Akash Rana</h3>
+                                <p>Teacher</p>
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+                            <div class="team-text">
+                                <h3>Akash Rana</h3>
+                                <p>Teacher</p>
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+                            <div class="team-text">
+                                <h3>Akash Rana</h3>
+                                <p>Teacher</p>
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary  mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet
+                            dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet
+                            dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet
+                            dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <div class="container-xxl py-5" id="contact-us">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Get In Touch</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                            style="width: 75px; height: 75px;">
+                            <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <h6>11, 77, West Punjabi Bagh, Punjabi Bagh, Delhi, 110026, India
+                        </h6>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                            style="width: 75px; height: 75px;">
+                            <i class="fa fa-envelope-open fa-2x text-primary"></i>
+                        </div>
+                        <h6>info@example.com</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                            style="width: 75px; height: 75px;">
+                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
+                        </div>
+                        <h6>+012 345 6789</h6>
+                    </div>
+                </div>
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="name"
+                                                    placeholder="Your Name">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="email"
+                                                    placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="subject"
+                                                    placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0"
+                                                    placeholder="Leave a message here" id="message"
+                                                    style="height: 100px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7001.80412485258!2d77.128376!3d28.662651000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03a2fc9ceae7%3A0xc5020c53559c6f5b!2sMother&#39;s%20Pride%20Punjabi%20Bagh%20-%20Pre%20School%20%26%20Early%20Learning%20Centre%20in%20Delhi!5e0!3m2!1sen!2sus!4v1715148312100!5m2!1sen!2sus"
+                                    width="100%" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>11, 77, West Punjabi Bagh, Punjabi Bagh, Delhi, 110026, India
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="#contact-us">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                <input type="text" class="form-control" placeholder="Your Name">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                <input type="email" class="form-control" placeholder="Your Email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                placeholder="Your message..." rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn send text-uppercase">
-                                            SEND MESSAGE NOW
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <i class="fa fa-copyright"></i> COPYRIGHT <span id="date"></span> BY Mother's Pride build by
+                            <a href="https://github.com/akashgujjar273" target="_blank">Akash Rana</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7001.80412485258!2d77.128376!3d28.662651000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03a2fc9ceae7%3A0xc5020c53559c6f5b!2sMother&#39;s%20Pride%20Punjabi%20Bagh%20-%20Pre%20School%20%26%20Early%20Learning%20Centre%20in%20Delhi!5e0!3m2!1sen!2sus!4v1715148312100!5m2!1sen!2sus"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <footer>
-        <p>
-            <i class="fa fa-copyright"></i> COPYRIGHT <span id="date"></span> BY Mother's Pride build by <a
-                href="https://github.com/akashgujjar273" target="_blank">Akash Rana</a>
-        </p>
-    </footer>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="./js/js.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
